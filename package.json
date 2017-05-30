@@ -1,0 +1,21 @@
+{
+  "name": "amitious_exercise",
+  "version": "1.0.0",
+  "description": "extra exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "ex test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "ambitoius"
+  ],
+  "author": "Michał Roch",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}
