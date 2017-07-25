@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-    max-width: 1900px;
+    max-width: 1076px;
     margin: 0 auto;
 }
 
@@ -19,6 +19,7 @@ body {
 header img {
     width: 189px;
     height: 24px;
+
 }
 
 header>nav>ul {
@@ -47,9 +48,8 @@ header>nav>ul>li {
 /* jumbotron */
 
 .jumbotron {
-    background-image: url("/images/background.png");
+    background-image: url("images/background.png");
     height: 750px;
-    width: 100%;
     margin-bottom: 121px;
     padding: 200px 0 150px 0;
     margin-top: -24px;
@@ -119,22 +119,16 @@ header>nav>ul>li {
 }
 
 .works img {
-    margin: 0;
-    width: 100%;
-    padding: 1px;
+    
+    max-width: 25vw;
+    max-height: 350px;
 }
 
 
 /* team */
-
 .team img {
-    margin-right: 17px;
-    height: 270px;
-    width: 270px;
-    display: block;
-    margin: auto;
+   
 }
-
 .name {
     color: #2d3033;
     font-size: 22px;
