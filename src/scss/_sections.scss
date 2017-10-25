@@ -1,0 +1,208 @@
+$btn_danger: #e84545;
+$profession_color: #e84545;
+$feature_text: #6c7279;
+$team_name: #2d3033;
+$download: #2d3033;
+$adress_bg: #3a3e64;
+$copy_bg: #313454;
+$copy_text: #808080;
+$base_color: #FFF;
+//=================
+// ----------------
+//    NAVIGATION
+// ----------------
+.header {
+  &__logo {
+    margin-left: 8%;
+  }
+}
+
+.nav {
+  position: fixed;
+  z-index: 999;
+  background-color: #2E2F4D;
+  height: 60px;
+  width: 100%;
+  padding-top: 23.5px;
+  opacity: 0.7;
+  &__list {
+    display: flex;
+    float: right;
+    margin-right: 8%;
+  }
+  &__link {
+    font-size: 13px;
+    font-weight: 700;
+    display: block;
+    padding: 0 30px;
+    text-transform: uppercase;
+    color: $base_color;
+    &:hover {
+      color: $btn_danger;
+      text-decoration: none;
+    }
+  }
+  &__item {
+    display: inline-block;
+  }
+}
+
+//=================
+// ----------------
+//    JUMBOTRON
+// ----------------
+.jumbotron {
+  height: 750px;
+  margin-bottom: 121px;
+  padding: 200px 0 150px 0;
+  background-image: url('../img/background.jpg');
+  &__heading {
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 71px;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-size: 22px;
+    line-height: 33px;
+    margin-top: 41px;
+  }
+  &__button {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 21px;
+    width: 200px;
+    height: 46px;
+    margin-top: 81px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background-color: $btn_danger;
+  }
+}
+
+//=================
+// ----------------
+//     FEATURE
+// ----------------
+.feature {
+  margin-bottom: 125px;
+  &__logotype {
+    display: block;
+    margin: auto;
+    margin-bottom: 35px;
+  }
+  &__heading {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 74px;
+    text-align: center;
+    color: $feature_text;
+  }
+}
+
+//=================
+// ----------------
+//     WORKS
+// ----------------
+.work {
+  margin-bottom: 101px;
+  &__picture {
+    max-width: 25vw;
+    max-height: 350px;
+  }
+}
+
+//=================
+// ----------------
+//     TEAM
+// ----------------
+.team {
+  &__photo {}
+  &__name {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #2d3033;
+  }
+  &__profession {
+    font-size: 13px;
+    margin-bottom: 31px;
+    text-transform: uppercase;
+    color: #e84545;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 21px;
+    color: #6c7279;
+  }
+}
+
+//=================
+// ----------------
+//  TESTIOMONIALS
+// ----------------
+//=================
+// ----------------
+//     DOWNLOAD
+// ----------------
+.download {
+  margin: 100px 0;
+  text-align: center;
+  color: $download;
+  &__heading {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 21px;
+  }
+  &__text {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-top: 22px;
+  }
+  &__button {
+    width: 280px;
+    height: 46px;
+    border-radius: 2px;
+    background-color: $btn_danger;
+    margin-top: 43px;
+  }
+}
+
+//=================
+// ----------------
+//     FOOTER
+// ----------------
+.adress {
+  height: 250px;
+  padding-top: 73px;
+  padding-bottom: 112px;
+  background-color: $adress_bg;
+  &__heading {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 23px;
+    opacity: .5;
+  }
+}
+
+.copyright {
+  font-size: 14px;
+  line-height: 23px;
+  height: 94px;
+  color: $copy_text;
+  background-color: $copy_bg;
+  padding-top: 20px;
+}

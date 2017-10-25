@@ -1,0 +1,34 @@
+{
+  "name": "active_box",
+  "version": "1.0.0",
+  "description": "Activebox PSD template",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrroch/dla-ambitnych-2.git"
+  },
+  "author": "Michal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrroch/dla-ambitnych-2/issues"
+  },
+  "homepage": "https://github.com/mrroch/dla-ambitnych-2#readme"
+}

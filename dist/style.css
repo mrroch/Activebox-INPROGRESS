@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900&subset=latin-ext');
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* navigation */
+
+header img {
+  width: 189px;
+  height: 24px;
+}
+
+header>nav>ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+header>nav ul>li>a {
+  font-size: 13px;
+  font-weight: 700;
+  display: block;
+  padding: 0 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: .75;
+  color: #fff;
+}
+
+header>nav>ul>li {
+  display: inline-block;
+}
+
+
+/* jumbotron */
+
+.jumbotron {
+  height: 750px;
+  margin-top: -24px;
+  margin-bottom: 121px;
+  padding: 200px 0 150px 0;
+  background-image: url('img/background.jpg');
+}
+
+.jumbotron h1 {
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 71px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.jumbotron p {
+  font-size: 22px;
+  line-height: 33px;
+  margin-top: 41px;
+  color: #fff;
+}
+
+.jumbotron button {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 21px;
+  width: 200px;
+  height: 46px;
+  margin-top: 81px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  background-color: #e84545;
+}
+
+
+/* features */
+
+.features {
+  margin-bottom: 125px;
+}
+
+.features img {
+  display: block;
+  margin: auto;
+  margin-bottom: 35px;
+}
+
+.features h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.features p {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 74px;
+  text-align: center;
+  color: #6c7279;
+}
+
+
+/* works */
+
+.works {
+  margin-bottom: 101px;
+}
+
+.works img {
+  max-width: 25vw;
+  max-height: 350px;
+}
+
+
+/* team */
+
+.name {
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #2d3033;
+}
+
+.profession {
+  font-size: 13px;
+  margin-bottom: 31px;
+  text-transform: uppercase;
+  color: #e84545;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 21px;
+  color: #6c7279;
+}
+
+
+/* download */
+
+.download {
+  margin: 100px 0;
+  text-align: center;
+}
+
+.download h3 {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 21px;
+  color: #2d3033;
+}
+
+.download p {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 21px;
+  margin-top: 22px;
+  text-transform: uppercase;
+  color: #2d3033;
+}
+
+.download button {
+  width: 280px;
+  height: 46px;
+  margin-top: 43px;
+  border-radius: 2px;
+  background-color: #e84545;
+}
+
+
+/* footer */
+
+.adress {
+  height: 250px;
+  padding-top: 73px;
+  padding-bottom: 112px;
+  color: #fff;
+  background-color: #3a3e64;
+}
+
+.adress h4 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.adress p {
+  font-size: 14px;
+  line-height: 23px;
+  opacity: .5;
+  color: #fff;
+}
+
+.bottom {
+  font-size: 14px;
+  line-height: 23px;
+  height: 94px;
+  color: #808080;
+  background-color: #313454;
+}
+
+i {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 2px;
+}
+
+.fa {
+  font-size: 18px;
+  line-height: 40px;
+}

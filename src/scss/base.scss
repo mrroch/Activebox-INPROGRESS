@@ -1,0 +1,18 @@
+@import '_reset';
+@import '_fonts';
+@import '_sections';
+
+body {
+    margin: 0;
+    font-family: 'raleway';
+    color: $base_color;
+}
+
+.container {
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+}

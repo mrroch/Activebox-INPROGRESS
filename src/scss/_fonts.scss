@@ -1,0 +1,61 @@
+// ---------------
+//      FONTS
+// ---------------
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway';
+  src: url('../fonts/raleway-regular-webfont.eot');
+  src: url('../fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/raleway-regular-webfont.woff2') format('woff2'), url('../fonts/raleway-regular-webfont.woff') format('woff'), url('../fonts/raleway-regular-webfont.ttf') format('truetype'), url('../fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// ---------------
+// FONTS VARIABLES
+// ---------------
+$weight_regular: 400;
+$weight_bold: 700;
+$weight_extrabold: 900;
+$font-size__xl: 65px;
+$font-size__l: 28px;
+$font-size__xm: 22px;
+$font-size__m: 18px;
+$font-size__s: 14px;
+$font-size__xs: 13px;
+// ---------------
+//     ICONS
+// ---------------
+.social__icon--facebook:before {
+  content: "\f09a";
+}
+
+.social__icon--twitter:before {
+  content: "\f099";
+}
+
+.social__icon--linkedin:before {
+  content: "\f08c";
+}
+
+.icon {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  font-size: 18px;
+  line-height: 40px;
+  margin-top: 3%;
+}
