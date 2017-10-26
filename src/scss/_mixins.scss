@@ -1,0 +1,37 @@
+// MIXINS FOR FONT 14 PX
+
+@mixin FsLxs {
+  font-size: $font-size__s;
+  line-height: $line_height-xs;
+}
+@mixin FsLs {
+  font-size: $font-size__s;
+  line-height: $line_height-s;
+}
+@mixin smallBold {
+  font-size: $font-size__s;
+  font-weight: $weight_bold;
+}
+@mixin FsWbLs {
+  font-size: $font-size__s;
+  font-weight: $weight_bold;
+  line-height: $line_height-s;
+}
+
+// JUMBOTRON H1
+@mixin jumbotron {
+  font-size: $font-size__xl;
+  font-weight: $weight_bold;
+  line-height: $line_height-max;
+}
+
+
+// BUTTON
+
+@mixin btnset {
+  width: 240px;
+  height: 46px;
+  border-radius: 2px;
+  background-color: $btn_danger;
+  text-transform: uppercase;
+}

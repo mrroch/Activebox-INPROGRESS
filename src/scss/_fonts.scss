@@ -23,25 +23,53 @@
 $weight_regular: 400;
 $weight_bold: 700;
 $weight_extrabold: 900;
+//---FONT SIZE---
 $font-size__xl: 65px;
 $font-size__l: 28px;
 $font-size__xm: 22px;
 $font-size__m: 18px;
 $font-size__s: 14px;
 $font-size__xs: 13px;
+//---LINE HEIGHT---
+$line_height-xs: 21px;
+$line_height-s: 23px;
+$line_height-xm: 33px;
+$line_height-max: 71px;
 // ---------------
 //     ICONS
 // ---------------
-.social__icon--facebook:before {
-  content: "\f09a";
+.facebook {
+  &:before {
+    content: "\f09a";
+  }
+  &:hover {
+    
+    border: none;
+    color: #FFF;
+    background-color: #3b5998;
+  }
 }
 
-.social__icon--twitter:before {
-  content: "\f099";
+.twitter {
+  &:before {
+    content: "\f099";
+  }
+  &:hover {
+    border: none;
+    color: #FFF;
+    background-color: #00aced;
+  }
 }
 
-.social__icon--linkedin:before {
-  content: "\f08c";
+.linkedin {
+  &:before {
+    content: "\f0e1";
+  }
+  &:hover {
+    border: none;
+    background-color: #007bb6;
+    color: #FFF;
+  }
 }
 
 .icon {
@@ -51,11 +79,23 @@ $font-size__xs: 13px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 40px;
-  height: 40px;
-  border: 2px solid #fff;
-  border-radius: 2px;
-  font-size: 18px;
-  line-height: 40px;
-  margin-top: 3%;
+  &__footer {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    font-size: 18px;
+    line-height: 40px;
+    margin-top: 3%;
+  }
+  &__team {
+    color: #c7cbcd;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    margin-top: 3%;
+    border: 2px solid #c7cbcd;
+    line-height: 30px;
+    text-align: center;
+  }
 }

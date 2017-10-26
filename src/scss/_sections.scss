@@ -21,25 +21,27 @@ $base_color: #FFF;
   position: fixed;
   z-index: 999;
   background-color: #2E2F4D;
-  height: 60px;
+  height: 70px;
   width: 100%;
   padding-top: 23.5px;
   opacity: 0.7;
+  border-bottom: 2px solid #555971;
   &__list {
     display: flex;
     float: right;
     margin-right: 8%;
   }
   &__link {
-    font-size: 13px;
-    font-weight: 700;
+    @include smallBold;
     display: block;
-    padding: 0 30px;
+    padding: 7px 30px;
     text-transform: uppercase;
     color: $base_color;
     &:hover {
-      color: $btn_danger;
+      color: $base_color;
       text-decoration: none;
+      border-bottom: 2px solid $btn_danger;
+      border-bottom-width: medium;
     }
   }
   &__item {
@@ -57,26 +59,19 @@ $base_color: #FFF;
   padding: 200px 0 150px 0;
   background-image: url('../img/background.jpg');
   &__heading {
-    font-size: 65px;
-    font-weight: 700;
-    line-height: 71px;
+    @include jumbotron;
     text-transform: uppercase;
   }
   &__text {
-    font-size: 22px;
-    line-height: 33px;
+    font-size: $font-size__xm;
+    line-height: $line_height-xm;
     margin-top: 41px;
   }
   &__button {
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 21px;
-    width: 200px;
-    height: 46px;
+    @include FsWbLs;
+    @include btnset;
     margin-top: 81px;
-    text-transform: uppercase;
-    border-radius: 2px;
-    background-color: $btn_danger;
+    transition: 1s ease;
   }
 }
 
@@ -92,17 +87,13 @@ $base_color: #FFF;
     margin-bottom: 35px;
   }
   &__heading {
-    font-size: 14px;
-    font-weight: 700;
+    @include smallBold;
     margin-bottom: 25px;
-    text-align: center;
     text-transform: uppercase;
   }
   &__text {
-    font-size: 14px;
-    line-height: 21px;
+    @include FsLxs;
     margin-bottom: 74px;
-    text-align: center;
     color: $feature_text;
   }
 }
@@ -112,11 +103,17 @@ $base_color: #FFF;
 //     WORKS
 // ----------------
 .work {
-  margin-bottom: 101px;
   &__picture {
-    max-width: 25vw;
-    max-height: 350px;
+    width: 25vw;
+    margin-left: -16px;
+    &:hover {
+      background-color: $btn_danger;
+    }
   }
+}
+
+.photo__wrapper {
+  overflow: hidden;
 }
 
 //=================
@@ -124,55 +121,75 @@ $base_color: #FFF;
 //     TEAM
 // ----------------
 .team {
+  margin-top: 125px;
   &__photo {}
   &__name {
-    font-size: 22px;
+    font-size: $font-size__xm;
     margin-top: 30px;
     margin-bottom: 15px;
     color: #2d3033;
   }
   &__profession {
-    font-size: 13px;
+    font-size: $font-size__xs;
     margin-bottom: 31px;
     text-transform: uppercase;
     color: #e84545;
   }
   &__text {
-    font-size: 14px;
-    line-height: 21px;
+    @include FsLxs;
     color: #6c7279;
   }
 }
 
 //=================
 // ----------------
-//  TESTIOMONIALS
+//      SLIDER
 // ----------------
+.slider {
+  margin-top: 100px;
+  &__text {
+    position: static;
+    text-align: left;
+    padding: 5vw 4vw;
+  }
+  &__item {
+    background: $btn_danger;
+  }
+  &__opinion {
+    font-size: $font-size__l;
+    color: $base_color;
+  }
+  &__name {
+    margin-top: 20px;
+    font-size: 16px;
+    color: $base_color;
+  }
+  &__list {
+    margin-left: 0;
+    left: calc(75% - 75px);
+    width: 150px;
+  }
+}
+
 //=================
 // ----------------
 //     DOWNLOAD
 // ----------------
 .download {
-  margin: 100px 0;
-  text-align: center;
+  margin: 125px 0;
   color: $download;
   &__heading {
-    font-size: 28px;
+    font-size: $font-size__l;
     font-weight: 300;
-    line-height: 21px;
+    line-height: $line_height-xs;
   }
   &__text {
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 21px;
+    @include FsWbLs;
     text-transform: uppercase;
     margin-top: 22px;
   }
   &__button {
-    width: 280px;
-    height: 46px;
-    border-radius: 2px;
-    background-color: $btn_danger;
+    @include btnset;
     margin-top: 43px;
   }
 }
@@ -187,20 +204,17 @@ $base_color: #FFF;
   padding-bottom: 112px;
   background-color: $adress_bg;
   &__heading {
-    font-size: 14px;
-    font-weight: 700;
+    @include smallBold;
     text-transform: uppercase;
   }
   &__text {
-    font-size: 14px;
-    line-height: 23px;
+    @include FsLs;
     opacity: .5;
   }
 }
 
 .copyright {
-  font-size: 14px;
-  line-height: 23px;
+  @include FsLs;
   height: 94px;
   color: $copy_text;
   background-color: $copy_bg;
