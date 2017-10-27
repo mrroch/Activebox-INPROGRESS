@@ -38,36 +38,41 @@ $line_height-max: 71px;
 // ---------------
 //     ICONS
 // ---------------
+$facebook_color: #3b5998;
+$twitter_color: #00aced;
+$linkedin_color: #007bb6;
 .facebook {
+  transition: 1s ease;
   &:before {
     content: "\f09a";
   }
   &:hover {
-    
-    border: none;
+    border: 2px solid $facebook_color;
     color: #FFF;
-    background-color: #3b5998;
+    background-color: $facebook_color;
   }
 }
 
 .twitter {
+  transition: 1s ease;
   &:before {
     content: "\f099";
   }
   &:hover {
-    border: none;
+    border: 2px solid $twitter_color;
     color: #FFF;
-    background-color: #00aced;
+    background-color: $twitter_color;
   }
 }
 
 .linkedin {
+  transition: 1s ease;
   &:before {
     content: "\f0e1";
   }
   &:hover {
-    border: none;
-    background-color: #007bb6;
+    border: 2px solid $linkedin_color;
+    background-color: $linkedin_color;
     color: #FFF;
   }
 }
@@ -79,6 +84,7 @@ $line_height-max: 71px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
   &__footer {
     width: 40px;
     height: 40px;

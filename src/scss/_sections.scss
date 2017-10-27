@@ -17,35 +17,40 @@ $base_color: #FFF;
   }
 }
 
+
 .nav {
-  position: fixed;
-  z-index: 999;
   background-color: #2E2F4D;
-  height: 70px;
   width: 100%;
-  padding-top: 23.5px;
-  opacity: 0.7;
   border-bottom: 2px solid #555971;
   &__list {
-    display: flex;
-    float: right;
-    margin-right: 8%;
+    display: block;
+    padding-right: 40px;
+    border-bottom: none;
+    text-align: center
   }
   &__link {
     @include smallBold;
-    display: block;
-    padding: 7px 30px;
+    padding: 7px 12px;
+    margin: 0 10px;
     text-transform: uppercase;
+    display: inline-block;
     color: $base_color;
     &:hover {
-      color: $base_color;
-      text-decoration: none;
-      border-bottom: 2px solid $btn_danger;
-      border-bottom-width: medium;
+      color: inherit;
     }
-  }
-  &__item {
-    display: inline-block;
+    &:after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 0;
+      transition: width 800ms ease, background-color 0.5s ease;
+      position: relative;
+      margin-top: 4px;
+    }
+    &:hover:after {
+      width: 100%;
+      background: $btn_danger;
+    }
   }
 }
 
@@ -81,6 +86,7 @@ $base_color: #FFF;
 // ----------------
 .feature {
   margin-bottom: 125px;
+  color: $feature_text;
   &__logotype {
     display: block;
     margin: auto;
@@ -94,7 +100,6 @@ $base_color: #FFF;
   &__text {
     @include FsLxs;
     margin-bottom: 74px;
-    color: $feature_text;
   }
 }
 
@@ -106,14 +111,31 @@ $base_color: #FFF;
   &__picture {
     width: 25vw;
     margin-left: -16px;
-    &:hover {
-      background-color: $btn_danger;
-    }
+    overflow: hidden;
   }
 }
 
-.photo__wrapper {
+.hover {
+  position: relative;
+  cursor: pointer;
+  margin: 0 -15px;
   overflow: hidden;
+  &__overlay {
+    background-color: #2E2F4D;
+    width: 25vw;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__name {
+    margin-top: 30%;
+  }
 }
 
 //=================
@@ -122,7 +144,6 @@ $base_color: #FFF;
 // ----------------
 .team {
   margin-top: 125px;
-  &__photo {}
   &__name {
     font-size: $font-size__xm;
     margin-top: 30px;
@@ -176,7 +197,7 @@ $base_color: #FFF;
 //     DOWNLOAD
 // ----------------
 .download {
-  margin: 125px 0;
+  margin: 200px 0;
   color: $download;
   &__heading {
     font-size: $font-size__l;
@@ -199,7 +220,7 @@ $base_color: #FFF;
 //     FOOTER
 // ----------------
 .adress {
-  height: 250px;
+  height: 200px;
   padding-top: 73px;
   padding-bottom: 112px;
   background-color: $adress_bg;

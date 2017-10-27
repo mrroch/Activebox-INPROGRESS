@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="pl">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -14,28 +14,38 @@
 <body>
 
   <header class="header">
-    <nav class="nav">
-      <a class="header__link" href="#jumbotron"><img class="header__logo" src="img/activebox%20logo.png" alt="logo with activebox name"></a>
-      <ul class="nav__list">
-        <li class="list__item"><a class="nav__link" href="#features">Features</a></li>
-        <li class="list__item"><a class="nav__link" href="#works">Works</a></li>
-        <li class="list__item"><a class="nav__link" href="#team">Our team</a></li>
-        <li class="list__item"><a class="nav__link" href="#slider">Testimonials</a></li>
-        <li class="list__item"><a class="nav__link" href="#download">Download</a></li>
-      </ul>
+    <nav class="nav__respo nav navbar-inverse navbar-fixed-top">
+      <div class="navbar-header">
+        <button type="button" class="nav__button navbar-toggle collapsed" data-toggle="collapse" data-target="#mainnavbar" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="header__link" href="#main"><img class="header__logo navbar-brand" src="img/activebox%20logo.png" alt="logo with activebox name"></a>
+      </div>
+
+      <div class="collapse navbar-collapse navbar-right" id="mainnavbar">
+        <ul class="nav__list nav navbar-nav">
+          <li class="list__item"><a class="nav__link" href="#features">Features</a></li>
+          <li class="list__item"><a class="nav__link" href="#works">Works</a></li>
+          <li class="list__item"><a class="nav__link" href="#team">Our team</a></li>
+          <li class="list__item"><a class="nav__link" href="#slider">Testimonials</a></li>
+          <li class="list__item"><a class="nav__link" href="#download">Download</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
-  <section class="jumbotron text-center" id="jumbotron">
+  <section class="jumbotron text-center" id="main">
     <div class="container">
       <h1 class="jumbotron__heading">Your Favorite One Page</br> Multi Purpose Template</h1>
       <p class="jumbotron__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna</br> vel scelerisque nisl consectetur et.</p>
-      <button class="jumbotron__button btn btn-danger">Find out more</button>
+      <button class="jumbotron__button btn btn-danger" id="jumbbtn">Find out more</button>
     </div>
   </section>
 
   <section class="feature" id="features">
-    <div class="row container">
+    <div class="row text-center container">
       <div class="col-lg-4 col-md-4">
         <img class="feature__logotype" src="img/pen.png">
         <h3 class="feature__heading">Easily Customised</h3>
@@ -44,7 +54,7 @@
 
       <div class="col-md-4">
         <img class="feature__logotype" src="img/monitor.png">
-        <h3 class="feature__heading">Responsive REady</h3>
+        <h3 class="feature__heading">Responsive Ready</h3>
         <p class="feature__text">Cras justo odio, dapibus ac facilisis in, egestas</br> eget quam. Nullam quis risus eget urna mollis</br> ornare vel eu leo. Donec ullamcorper nulla.</p>
       </div>
 
@@ -64,7 +74,7 @@
         <div class="col-md-4">
           <img class="feature__logotype" src="img/briefcase.png">
           <h3 class="feature__heading">Ready to Ship</h3>
-          <p class="feature__text">Cras justo odio, dapibus ac facheadingilisis in, egestas</br> eget quam. Nullam quis risus eget urna mollis</br> ornare vel eu leo. Donec ullamcorper nulla.</p>
+          <p class="feature__text">Cras justo odio, dapibus ac facilisis in, egestas</br> eget quam. Nullam quis risus eget urna mollis</br> ornare vel eu leo. Donec ullamcorper nulla.</p>
         </div>
 
         <div class="col-md-4">
@@ -79,42 +89,113 @@
 
   <section class="work" id="works">
     <div class="container-fluid photo__wrapper">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-          <img class="work__picture" src="img/layer-35.jpg" alt="">
-        </div>
-
+      <div class="row text-center">
 
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-          <img class="work__picture" src="img/gallery.jpeg" alt="">
+          <div class="hover">
+            <div class="hover__overlay">
+              <h4 class="hover__name">CSS IS AWESOME DUDE!</h4>
+              <p class="hover__text">Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+
+            <div>
+              <img class="work__picture" src="img/gallery1.jpeg">
+            </div>
+
+          </div>
         </div>
-
-
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-          <img class="work__picture" src="img/layer-35.jpg" alt="">
+          <div class="hover">
+            <div class="hover__overlay">
+              <h4 class="hover__name">CSS IS AWESOME DUDE!</h4>
+              <p class="hover__text">Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+
+            <div>
+              <img class="work__picture" src="img/gallery2.jpg">
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="hover">
+            <div class="hover__overlay">
+              <h4 class="hover__name">CSS IS AWESOME DUDE!</h4>
+              <p class="hover__text">Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+
+            <div>
+              <img class="work__picture" src="img/gallery8.jpg">
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="hover">
+            <div class="hover__overlay">
+              <h4 class="hover__name">CSS IS AWESOME DUDE!</h4>
+              <p class="hover__text">Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+
+            <div>
+              <img class="work__picture" src="img/gallery4.jpg">
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="hover">
+            <div class="hover__overlay">
+              <h4 class="hover__name">CSS IS AWESOME DUDE!</h4>
+              <p class="hover__text">Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+
+            <div>
+              <img class="work__picture" src="img/gallery8.jpg">
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="hover">
+            <div class="hover__overlay">
+              <h4 class="hover__name">CSS IS AWESOME DUDE!</h4>
+              <p class="hover__text">Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+
+            <div>
+              <img class="work__picture" src="img/gallery2.jpg">
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="hover">
+            <div class="hover__overlay">
+              <h4 class="hover__name">CSS IS AWESOME DUDE!</h4>
+              <p class="hover__text">Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+
+            <div>
+              <img class="work__picture" src="img/gallery4.jpg">
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="hover">
+            <div class="hover__overlay">
+              <h4 class="hover__name">CSS IS AWESOME DUDE!</h4>
+              <p class="hover__text">Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+
+            <div>
+              <img class="work__picture" src="img/gallery8.jpg">
+            </div>
+
+          </div>
         </div>
 
-
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-          <img class="work__picture" src="img/layer-38.jpg" alt="">
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-          <img class="work__picture" src="img/layer-39.jpg" alt="">
-        </div>
-
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-          <img class="work__picture" src="img/layer-38.jpg" alt="">
-        </div>
-
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-          <img class="work__picture" src="img/gallery.jpeg" alt="">
-        </div>
-
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-          <img class="work__picture" src="img/layer-42.jpg" alt="">
-        </div>
       </div>
     </div>
   </section>
@@ -196,7 +277,7 @@
               <div class="slider__item item">
                 <div class="row">
                   <div class="col-xs-12 col-md-6">
-                    <img class="slider__image img-responsive" src="img/slide1.jpeg" alt="Second slide">
+                    <img class="slider__image img-responsive" src="img/slide1.jpg" alt="Second slide">
                   </div>
 
                   <div class="col-xs-12 col-md-6">
@@ -211,7 +292,7 @@
               <div class="slider__item item">
                 <div class="row">
                   <div class="col-xs-12 col-md-6">
-                    <img class="slider__image img-responsive" src="img/slide2.jpeg" alt="Third slide">
+                    <img class="slider__image img-responsive" src="img/slide2.jpg" alt="Third slide">
                   </div>
 
                   <div class="col-xs-12 col-md-6">
@@ -226,7 +307,7 @@
               <div class="slider__item item">
                 <div class="row">
                   <div class="col-xs-12 col-md-6">
-                    <img class="slider__image img-responsive" src="img/slide3.jpeg" alt="Fourth slide">
+                    <img class="slider__image img-responsive" src="img/slide3.jpg" alt="Fourth slide">
                   </div>
 
                   <div class="col-xs-12 col-md-6">
@@ -241,7 +322,7 @@
               <div class="slider__item item">
                 <div class="row">
                   <div class="col-xs-12 col-md-6">
-                    <img class="slider__image img-responsive" src="img/slide4.jpeg" alt="Fith slide">
+                    <img class="slider__image img-responsive" src="img/slide4.jpg" alt="Fith slide">
                   </div>
 
                   <div class="col-xs-12 col-md-6">
@@ -307,12 +388,16 @@
         </div>
       </div>
     </div>
+  </footer>
+
+  <footer>
     <div class="copyright text-center">
       <p class="copyright__text">Copyright © 2015 ActiveBox. All Rights Reserved</p>
       <p class="copyright__text">Coded by Michał Roch</p>
     </div>
   </footer>
 
+  <script src="js/scripts.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
