@@ -22,26 +22,26 @@ var handleError = function (err) {
 //============================================
 //          JS tasks
 //============================================    
-//gulp.task('js', function () {
-//  var s = size();
-//  return gulp.src('src/js/*.js')
-//    .pipe(plumber({ 
-//      errorHandler: handleError
-//    }))
-//    .pipe(sourcemaps.init()) 
-//    .pipe(concat('scripts.js'))
-//    .pipe(uglify())
-//    .pipe(s) 
-//    .pipe(rename({ 
-//      suffix: '.min'
-//    }))
-//    .pipe(sourcemaps.write('.')) 
-//    .pipe(gulp.dest('dist/js')) 
-//    .pipe(browserSync.stream({
-//      match: '**/*.js'
-//    })) 
-//});
-//
+gulp.task('js', function () {
+  var s = size();
+  return gulp.src('src/js/*.js')
+    .pipe(plumber({
+      errorHandler: handleError
+    }))
+    .pipe(sourcemaps.init())
+    .pipe(concat('scripts.js'))
+    .pipe(uglify())
+    .pipe(s)
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('dist/js'))
+    .pipe(browserSync.stream({
+      match: '**/*.js'
+    }))
+});
+
 
 gulp.task('browserSync', function () {
   browserSync.init({
@@ -80,9 +80,9 @@ gulp.task('sass', function () {
 });
 
 gulp.task('watch', function () {
-  //  gulp.watch('src/js/*.js', ['js']);
+  gulp.watch('src/js/*.js', ['js']);
   gulp.watch('src/scss/**/*.scss', ['sass']);
   gulp.watch("**/*.html").on('change', browserSync.reload);
 });
 
-gulp.task('default', [ /*'js'*/ 'sass', 'browserSync', 'watch']);
+gulp.task('default', ['js', 'sass', 'browserSync', 'watch']);
